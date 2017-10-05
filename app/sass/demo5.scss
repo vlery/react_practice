@@ -1,0 +1,15 @@
+@charset "utf-8";
+$red: red;
+$light_blue: lightblue;
+@mixin setSize($len) {
+  width:$len;
+  height:$len;
+}
+.box1{
+  @include setSize(20px);
+  background:$red;
+}
+.box2{
+  @include setSize(10px);
+  background:$light_blue;
+}
